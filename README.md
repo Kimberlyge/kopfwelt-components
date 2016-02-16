@@ -3,6 +3,7 @@
 Required scripts
 
 jQuery
+wolfy87-eventemitter
 
 Required mixins
 
