@@ -1,0 +1,79 @@
+.Fullscreen-video,
+.Fullscreen-image {
+	z-index: 1;
+	&::after {
+		pointer-events: none;
+	}
+	iframe {
+		@include aspect-ratio-inner;
+	}
+}
+.no-objectfit {
+	.Fullscreen-video {
+		background-image: url(/images/keyvisual-header.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		img {
+			display: none;
+		}
+	}
+}
+.Fullscreen-video {
+	@include aspect-ratio(16,9);
+	min-height: 100vh;
+	img {
+		@include aspect-ratio-inner;
+		object-fit: cover;
+	}
+}
+.Fullscreen-content {
+	@include positionCenter;
+	z-index: 3;
+}
+.Fullscreen-item {
+	@include flexCol;
+}
+.Fullscreen-scroll {
+	width: 100%;
+	bottom: 0;
+	z-index: 3;
+	text-align: center;
+	transition: transform 0.25s $easing;
+
+	&:hover {
+		transform: translate(0px, 5px);
+	}
+}
+
+/**
+ * Animation
+ */
+
+.Fullscreen-logo,
+.Fullscreen-title,
+.Fullscreen-download,
+.Fullscreen-item > p,
+.Fullscreen-scroll {
+	animation-name: fade-in;
+	animation-duration: 0.5s;
+	animation-delay: 0.3s;
+	animation-fill-mode: both;
+}
+@keyframes move-up-content {
+	0% {transform: translate(-50%, -50%) scale(1);}
+	100% {transform: translate(-50%, -50%) scale(0.95);}
+}
+.Fullscreen-content {
+	transform: translate(-50%, -70%);
+	animation-name: move-up-content;
+	animation-duration: 1s;
+	animation-delay: 1s;
+	animation-timing-function: ease-in-out;
+	animation-fill-mode: both;
+}
+.Fullscreen-item > p {
+	animation-delay: 1.8s;
+}
+.Fullscreen-scroll {
+	animation-delay: 2s;
+}

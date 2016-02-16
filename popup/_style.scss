@@ -1,0 +1,14 @@
+/**
+ * Popup Specific
+ */
+
+.Popup {
+	background-color: $darkblue;
+
+	h2 {
+		text-align: center;
+	}
+}
+.Popup-title:not(:first-of-type) {
+	margin-top: rem(55);
+}

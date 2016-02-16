@@ -1,0 +1,47 @@
+/**
+ * Popup Base
+ */
+
+.Popup {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	color: $white;
+	padding: rem(100) rem(50);
+	width: 100%;
+	overflow-y: scroll;
+
+	@media (min-width: $layout-m) {
+		padding: rem(100);
+	}
+}
+.Popup-inner {
+	max-width: rem(600);
+	margin-left: auto;
+	margin-right: auto;
+}
+.Popup-close {
+	position: fixed;
+	top: 0;
+	right: 0;
+
+	i {
+		opacity: 1;
+		cursor: pointer;
+		padding: 2em 3em;
+		background-position: center;
+		background-size: 20px;
+
+		&:active {
+			top: 0;
+		}
+
+		@media (min-width: $layout-m) {
+			padding: 3em 4em;
+			background-size: 30px;
+		}
+	}
+
+}
