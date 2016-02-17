@@ -1,0 +1,41 @@
+{{> "templates/header"}}
+
+	{{#> "components/fullscreen/template"}}
+		<div class="Fullscreen-video">
+			<!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/AUvx2q7a3_A" frameborder="0" allowfullscreen></iframe> -->
+			<img src="/images/keyvisual-header.jpg" alt="" />
+		</div>
+
+		<div class="Fullscreen-content">
+			<div class="Fullscreen-item u-flexAlignItemsCenter">
+				<img class="Fullscreen-logo" src="/images/logo/logo.svg" alt="m.ride">
+				<h2 class="Fullscreen-title">{{{t 'splash.title'}}}</h2>
+				<a class="Fullscreen-imageLink" href="#">
+					<img src="/images/logo/googleplay.png" alt="" />
+				</a>
+				<p>{{t 'splash.availability'}}</p>
+			</div>
+		</div>
+		<a href="#firstSection" class="Fullscreen-scroll u-posAbsolute">
+			<i class="icon-arrow-down"></i>
+		</a>
+	{{/"components/fullscreen/template"}}
+
+	{{> "components/logowall/template"}}
+
+	{{#> "components/fullscreen/template"}}
+		<div class="Fullscreen-image">
+			<img src="/images/keyvisual-footer.jpg" alt="" />
+		</div>
+		<div class="Fullscreen-content">
+			<div class="Fullscreen-item u-flexAlignItemsCenter">
+				<img class="Fullscreen-logo" src="/images/logo/logo.svg" alt="m.ride">
+				<a class="Fullscreen-imageLink" href="#">
+					<img src="/images/logo/googleplay.png" alt="" />
+				</a>
+				<p>{{t 'splash.availability'}}</p>
+			</div>
+		</div>
+	{{/"components/fullscreen/template"}}
+
+{{> "templates/footer"}}

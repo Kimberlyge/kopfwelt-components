@@ -1,0 +1,30 @@
+.skew {
+	display: flex;
+	transform: skew( 0deg, 0deg);
+	padding-top: 100px;
+	padding-bottom: 100px;
+	border: 2px solid black;
+
+	// perspective: 450px;
+}
+.skew-inside {
+	transform-style: preserve-3d;
+	margin: auto;
+	opacity: 0;
+	transform: translateX(-100%);
+	&.is-active {
+		opacity: 1;
+		transform: translateX(0);
+		transition: opacity 400ms, transform 200ms;
+		.test {
+			transform: perspective(450px) rotateY(30deg);
+			transition: transform 500ms;
+		}
+	}
+}
+.test {
+	transform: perspective(1000px) rotateY(10deg);
+	img {
+		max-height: 329px;
+	}
+}

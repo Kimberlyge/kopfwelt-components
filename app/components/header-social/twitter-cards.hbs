@@ -1,0 +1,21 @@
+{{#if twitter.twitterCard}}
+	<meta name="twitter:card" content="{{twitter.twitterCard}}">
+{{else}}
+	<meta name="twitter:card" content="summary_large_image">
+{{/if}}
+
+{{#if twitter.twitterSite}}
+	<meta name="twitter:site" content="{{twitter.twitterSite}}">
+{{/if}}
+
+{{#if twitter.metaTitle}}
+	<meta name="twitter:title" content="{{twitter.metaTitle}}">
+{{/if}}
+
+{{#if twitter.metaDescription}}
+	<meta name="twitter:description" content="{{twitter.metaDescription}}">
+{{/if}}
+
+{{#if twitter.metaUrl}}
+	<meta name="twitter:image" content="{{twitter.metaUrl}}">
+{{/if}}

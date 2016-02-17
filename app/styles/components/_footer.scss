@@ -1,0 +1,38 @@
+.SiteFooter-media {
+	 width: 100%;
+}
+.SiteFooter-socialNav {
+	justify-content: space-between;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: rem(25);
+	max-width: 12em;
+
+	.Icon {
+		display: inline-block;
+		margin-left: rem(40);
+		&:first-of-type {
+			margin: 0;
+		}
+		i {
+			width: 25px;
+			height: 25px;
+		}
+	}
+}
+
+.SiteFooterNav {
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	@media (min-width: $layout-sm) {
+		flex-direction: row;
+	}
+}
+a.SiteFooterNav-item {
+	margin: rem(5);
+
+	@media (min-width: $layout-sm) {
+		margin: rem(15);
+	}
+}

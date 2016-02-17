@@ -1,0 +1,57 @@
+// Typography
+$root-font-size: 17px;
+$root-line-height: (25/17);
+$root-font-family: serif;
+
+// Grays
+$white: hsl(0, 0%, 100%);
+$lightgray: hsl(0, 0%, 96%);
+$gray: hsl(212, 8%, 66%);
+$black: hsl(0, 0%, 0%);
+
+// Colors
+$blue: hsl(207, 73%, 54%);
+$mediumblue: hsl(209, 27%, 30%);
+$darkblue: hsl(209, 48%, 12%);
+$red: hsl(0, 100%, 50%);
+
+// Color definitions
+$background-color: hsl(0, 0%, 100%) !default;
+$text-color: hsl(0, 0%, 7%) !default;
+
+// Font sizes
+$font-12: 12px;
+$font-14: 14px;
+$font-15: 15px;
+$font-17: 17px;
+$font-20: 20px;
+$font-27: 27px;
+$font-30: 30px;
+$font-37: 37px;
+$font-42: 42px;
+
+// Layout
+$space: 30px;
+
+// Susy
+// gutters are defined as a gutter/column ratio
+$susy: (
+	global-box-sizing: border-box,
+	columns: 12,
+	gutters: (1/4)
+);
+
+// Breakpoints
+$layout-s: 414px;
+$layout-sm: 660px;
+$layout-m: 768px;
+$layout-ml: 1024px;
+$layout-l: 1280px;
+$layout-xl: 1440px;
+
+// Good looking easings for animations
+$easing:  cubic-bezier(0.165, 0.840, 0.400, 1.000);
+$easing2: cubic-bezier(0.300, 0.000, 0.000, 1.300);
+$easing3: cubic-bezier(0.860, 0.000, 0.070, 1.000);
+$easing4: cubic-bezier(0.250, 1.400, 0.180, 1.000);
+$easing5: cubic-bezier(0.200, 0.300, 0.250, 0.900);
