@@ -40,7 +40,6 @@ $icon-spacing-vertical: $space/2;
 }
 .Icon--underneath {
 	flex-direction: column;
-	position: relative;
 	i {
 		margin: auto;
 	}
@@ -59,7 +58,6 @@ $icon-spacing-vertical: $space/2;
 	}
 }
 .Icon-text--underneath {
-	position: absolute;
 	right: 0;
 	left: 0;
 	text-align: center;
